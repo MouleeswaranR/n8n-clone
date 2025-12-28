@@ -1,6 +1,12 @@
-const Page=()=>{
+import { Button } from "@/components/ui/button";
+import prisma from "@/lib/db";
+
+const Page=async()=>{
+
   return (
-    <div className="text-red-500">Hello World</div>
+    <div className="text-red-500">
+     
+    </div>
   )
 }
 
