@@ -18,6 +18,9 @@ const {data}=useQuery(trpc.getWorkflows.queryOptions());
 const testAi=useMutation(trpc.testAi.mutationOptions({
   onSuccess:()=>{
     toast.success('AI Job Queued');
+  },
+  onError:()=>{
+    toast.error("Something went wrong")
   }
 }));
 const create =useMutation(trpc.createWorkflow.mutationOptions({
